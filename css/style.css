@@ -371,7 +371,6 @@ li {
   letter-spacing: 1.6px;
   margin-top: -21px;
 }
-
 .my-work .container .cards {
   display: flex;
   flex-wrap: wrap;
@@ -583,7 +582,7 @@ li {
   width: 100%;
   height: 300px;
   padding: 20px;
-  background-color: rgb(1, 145, 133);
+  background-color: rgb(255, 218, 219);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -600,15 +599,15 @@ li {
 
 .contact .container .con h1 {
   font-size: 30px;
-  color: #fff;
+  color: var(--main-color);
   text-align: left;
 }
 .contact .container .con p {
   font-size: 20px;
-  color: #fff;
+  color: var(--main-color);
   text-align: left;
 }
-.contact .container .callme {
+/* .contact .container .callme {
   width: 300px;
   height: 250px;
   background-color: rgb(255, 218, 219);
@@ -616,16 +615,16 @@ li {
   border-radius: 10px;
   text-align: center;
   padding-top: 50px;
-  color: #fff;
-}
+  color: var(--main-color);
+} */
 .contact .container .social {
   font-size: 30px;
-  color: #fff;
+  color: var(--main-color);
   text-align: left;
 }
 .contact .container .social i {
   font-size: 30px;
-  color: #fff;
+  color: var(--main-color);
   margin-right: 20px;
   cursor: pointer;
   transition: 0.5s;
