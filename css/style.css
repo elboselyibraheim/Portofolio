@@ -346,9 +346,17 @@ li {
   padding-top: 200px;
   position: relative;
 }
+.about-me h1 {
+  text-align: center;
+  font-size: 100px;
+  color: var(--main-color);
+  margin: 10px auto;
+  padding: 5px;
+  display: block;
+}
 .about-me .container > img {
   position: absolute;
-  top: 210px;
+  top: 150px;
   right: 230px;
   width: 146px;
   transform: rotate(340deg);
