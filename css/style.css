@@ -585,15 +585,17 @@ li {
   padding: 20px;
   background-color: rgb(1, 145, 133);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 25px;
   box-shadow: 0px 2px 20px #5d5b5bad;
 }
 .contact .container .con {
-  /* margin-top: 300px; */
   margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact .container .con h1 {
@@ -608,12 +610,13 @@ li {
 }
 .contact .container .callme {
   width: 300px;
-  height: 300px;
+  height: 250px;
   background-color: rgb(1, 145, 133);
   box-shadow: 0px 2px 20px #5d5b5bad;
   border-radius: 10px;
   text-align: center;
   padding-top: 50px;
+  color: #fff;
 }
 .contact .container .social {
   font-size: 30px;
@@ -623,9 +626,10 @@ li {
 .contact .container .social i {
   font-size: 30px;
   color: #fff;
-  margin-right: 10px;
+  margin-right: 20px;
   cursor: pointer;
   transition: 0.5s;
+  margin-top: 20px;
 }
 .contact .container .social i:hover {
   transform: rotate(30deg);
