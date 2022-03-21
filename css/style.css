@@ -611,7 +611,7 @@ li {
 .contact .container .callme {
   width: 300px;
   height: 250px;
-  background-color: rgb(1, 145, 133);
+  background-color: rgb(255, 218, 219);
   box-shadow: 0px 2px 20px #5d5b5bad;
   border-radius: 10px;
   text-align: center;
@@ -632,6 +632,6 @@ li {
   margin-top: 20px;
 }
 .contact .container .social i:hover {
-  transform: rotate(30deg);
+  transform: rotate(30deg) scale(1.1);
 }
 /* End contact */
