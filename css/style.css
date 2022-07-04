@@ -91,41 +91,23 @@ li {
 .up.show {
   right: 50px;
 }
-
 /* End Global rules */
-
-
-
 
 /* Start Nav  */
 .nav .container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
-@media (max-width: 400px) {
+@media (min-width: 400px) {
   .nav .container {
     justify-content: center;
   }
 }
 
-.nav .container .logo {
-  margin-top: 10px;
-}
-
-@media (min-width: 500px) {
-  .nav .container .logo {
-    margin-top: 50px;
-    margin-left: 50%;
-  }
-}
-
 .logo img {
   width: 120px;
-  flex: 1;
-  border-radius: 10px;
-  margin-left: 10px;
   transition: 0.2s;
 }
 
@@ -134,8 +116,6 @@ li {
 }
 
 .nav .links ul {
-  padding: 10px;
-  margin-right: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,7 +127,7 @@ li {
   }
 
   .nav .container .links {
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 10px;
   }
 }
@@ -157,12 +137,6 @@ li {
   cursor: pointer;
   text-decoration: none;
   color: #fff;
-}
-
-@media (max-width: 992px) {
-  .nav .links ul li a {
-    padding: 15px;
-  }
 }
 
 .nav .links ul li {
@@ -183,9 +157,6 @@ li {
 }
 
 /* End Nav */
-
-
-
 
 /* Start header */
 .header .container {
@@ -212,12 +183,12 @@ li {
     margin-top: 70%;
   }
 }
-@media screen and (max-width: 450px) {
+@media (max-width: 420px) {
   .header .container .social {
     transform: rotate(0deg);
     margin-right: 55%;
-    margin-top: 85%;
-    margin-right: 5px;
+    margin-right: 59%;
+    margin-top: 81%;
     padding: 2px;
   }
 }
@@ -303,10 +274,10 @@ li {
   transition: 0.5s;
 }
 
-@media (min-width: 400px) {
+@media (max-width: 400px) {
   .header .container .hallo p:first-child {
     font-size: 10em;
-    margin-top: 30px;
+    margin-top: 10px;
   }
 }
 
@@ -374,22 +345,20 @@ li {
 }
 
 .header .container .im img {
-  width: 550px;
-  margin-right: 5px;
+  max-width: 550px;
+  margin: 5px auto;
   transition: all 0.5s;
   position: absolute;
   top: 30px;
-  bottom: 0px;
-  right: 10px;
+  right: -53px;
   z-index: 1;
   filter: grayscale(100%);
 }
 
-@media (min-width: 400px) {
+@media (max-width: 375px) {
   .header .container .im img {
-    width: 400px;
-    right: 15px;
-    margin-right: 5px;
+    width: 100%;
+    margin: 5px auto;
   }
 }
 
