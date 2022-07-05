@@ -1,13 +1,13 @@
-/* start variable */
+/* ----------------------------- start variable ----------------------------- */
 :root {
   --main-color: #ea0f1e;
   --sec-color: #e45826;
   --back-cl: #1d1d1d;
 }
 
-/* End variable */
+/* ------------------------------ End variable ------------------------------ */
 
-/* Start Global rules */
+/* --------------------------- Start Global rules --------------------------- */
 
 * {
   -webkit-box-sizing: border-box;
@@ -35,7 +35,6 @@ body {
   padding-right: 2rem;
   margin-left: auto;
   margin-right: auto;
-  /* background-color: #fff; */
 }
 
 /* Small */
@@ -91,9 +90,9 @@ li {
 .up.show {
   right: 50px;
 }
-/* End Global rules */
+/* ---------------------------- End Global rules ---------------------------- */
 
-/* Start Nav  */
+/* -------------------------------- Start Nav ------------------------------- */
 .nav .container {
   display: flex;
   justify-content: space-between;
@@ -156,9 +155,9 @@ li {
   border-radius: 5px;
 }
 
-/* End Nav */
+/* --------------------------------- End Nav -------------------------------- */
 
-/* Start header */
+/* ------------------------------ Start header ------------------------------ */
 .header .container {
   display: flex;
   flex-wrap: wrap;
@@ -372,9 +371,9 @@ li {
   color: var(--main-color);
 }
 
-/* End header */
+/* ------------------------------- End header ------------------------------- */
 
-/* Start about */
+/* ------------------------------- Start about ------------------------------ */
 
 .about-me .container {
   display: flex;
@@ -454,9 +453,9 @@ li {
   font-weight: 300px;
 }
 
-/* End about */
+/* -------------------------------- End about ------------------------------- */
 
-/* Start My works */
+/* ----------------------------- Start My works ----------------------------- */
 
 .my-work .container {
   padding: 175px 0;
@@ -655,9 +654,9 @@ li {
   transform: scale(1.1);
 }
 
-/* End My works  */
+/* ------------------------------ End My works ------------------------------ */
 
-/* Start Skills */
+/* ------------------------------ Start Skills ------------------------------ */
 .skills {
   padding: 1rem;
   margin: 2rem auto;
@@ -725,9 +724,9 @@ li {
   padding: 5px;
 }
 
-/* End Skills */
+/* ------------------------------- End Skills ------------------------------- */
 
-/* Start contact */
+/* ------------------------------ Start contact ----------------------------- */
 
 .contact .container .text-con {
   width: 100%;
@@ -789,4 +788,4 @@ li {
   transform: rotate(30deg) scale(1.1);
 }
 
-/* End contact */
+/* ------------------------------- End contact ------------------------------ */
