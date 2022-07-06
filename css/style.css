@@ -36,6 +36,12 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
 
 /* Small */
 
@@ -67,12 +73,6 @@ body {
   }
 }
 
-ul,
-li {
-  text-decoration: none;
-  list-style: none;
-}
-
 .up {
   position: fixed;
   bottom: 10px;
@@ -90,18 +90,20 @@ li {
 .up.show {
   right: 50px;
 }
-/* ---------------------------- End Global rules ---------------------------- */
 
+/* ---------------------------- End Global rules ---------------------------- */
 /* -------------------------------- Start Nav ------------------------------- */
+
 .nav .container {
-  display: flex;
   justify-content: space-between;
   align-items: center;
+  display: flex;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 374px) {
   .nav .container {
     justify-content: center;
+    align-content: center;
   }
 }
 
@@ -113,11 +115,10 @@ li {
 .logo img:hover {
   transform: scale(1.1);
 }
-
 .nav .links ul {
-  display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
 }
 
 @media (max-width: 992px) {
@@ -134,7 +135,6 @@ li {
 .nav .links ul li a {
   padding: 10px;
   cursor: pointer;
-  text-decoration: none;
   color: #fff;
 }
 
@@ -150,7 +150,6 @@ li {
 
 .nav .links ul li:first-child a {
   font-size: 1em;
-  text-decoration: none;
   color: #fff;
   border-radius: 5px;
 }
@@ -160,13 +159,12 @@ li {
 /* ------------------------------ Start header ------------------------------ */
 .header .container {
   display: flex;
+
   flex-wrap: wrap;
-  position: relative;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
-  margin-top: 20px;
-  overflow: hidden;
+  position: relative;
+  margin-bottom: 300px;
 }
 
 .header .container .social {
@@ -182,13 +180,13 @@ li {
     margin-top: 70%;
   }
 }
-@media (max-width: 420px) {
+
+@media (max-width: 374px) {
   .header .container .social {
     transform: rotate(0deg);
     margin-right: 55%;
     margin-right: 59%;
     margin-top: 81%;
-    padding: 2px;
   }
 }
 
@@ -226,12 +224,11 @@ li {
   height: 1000px;
   z-index: auto;
 }
-
 .header .container .header-text {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin-top: 5px;
 }
 
@@ -296,12 +293,12 @@ li {
 }
 
 .header .container .me {
-  display: flex;
   overflow: hidden;
+  display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 0 1em;
   margin: 0 auto;
   text-align: center;
@@ -356,7 +353,6 @@ li {
 
 @media (max-width: 375px) {
   .header .container .im img {
-    width: 100%;
     margin: 5px auto;
   }
 }
@@ -377,25 +373,27 @@ li {
 
 .about-me .container {
   display: flex;
-  flex-direction: column;
+  height: 100vh;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-top: 200px;
   position: relative;
+  padding-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 75px;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
 }
 
 .about-me h1 {
   text-align: center;
-  font-size: 60px;
+  font-size: 40px;
   color: var(--main-color);
-  margin: 10px auto;
-  padding: 5px;
-  display: block;
 }
 
 .about-me .container > img {
   position: absolute;
-  top: 130px;
+  top: 120px;
   right: 230px;
   width: 130px;
   transform: rotate(340deg);
@@ -409,12 +407,10 @@ li {
 
 .about-me .container .about-text {
   max-width: 900px;
-  letter-spacing: 1.2px;
   line-height: 1.6;
   background-color: rgb(255, 218, 219);
   border-radius: 50px;
   padding: 20px 10px;
-  flex: 1;
   border: 5px solid var(--main-color);
 }
 
@@ -423,7 +419,7 @@ li {
   height: 200px;
   border-radius: 50%;
   position: absolute;
-  top: 63px;
+  top: 20px;
   left: 492px;
   border: 5px solid var(--main-color);
   transition: all 0.5s;
@@ -439,27 +435,17 @@ li {
   transform: scale(1.2) rotate(-10deg);
 }
 
-.about-me .container .about-text h2 {
-  font-size: 2em;
-  color: var(--main-color);
-  margin: 0 0;
-  font-weight: 300px;
-}
-
 .about-me .container p {
   font-size: 20px;
   color: var(--back-cl);
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-weight: 300px;
 }
 
 /* -------------------------------- End about ------------------------------- */
 
 /* ----------------------------- Start My works ----------------------------- */
-
-.my-work .container {
-  padding: 175px 0;
-}
 
 .my-work .container .heading {
   max-width: 500px;
@@ -486,11 +472,10 @@ li {
 }
 
 .my-work .container .cards {
-  display: flex;
   flex-wrap: wrap;
-  gap: 100px;
   justify-content: center;
   align-items: center;
+  gap: 100px;
   margin: 150px auto;
   perspective: 1200px;
 }
@@ -545,11 +530,10 @@ li {
   width: 100%;
   border-radius: 20px;
 }
-
 .my-work .container .cards .card .front .text {
-  display: flex;
   flex-direction: column;
   align-items: center;
+  display: flex;
   justify-content: center;
   max-width: 350px;
   flex-wrap: wrap;
@@ -691,11 +675,10 @@ li {
   width: 900px;
   padding: 1rem;
 }
-
 .skills .container .soft-sk .box {
-  display: flex;
   justify-content: space-evenly;
   align-items: center;
+  display: flex;
   flex-direction: column;
   width: 350px;
   padding: 1.2rem;
@@ -730,21 +713,20 @@ li {
 
 .contact .container .text-con {
   width: 100%;
-  height: 300px;
   padding: 20px;
+  height: 300px;
   background-color: rgb(255, 218, 219);
-  display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
   border-radius: 25px;
   box-shadow: 0px 2px 20px #5d5b5bad;
 }
-
 .contact .container .con {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .contact .container .con h1 {
