@@ -36,6 +36,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
 ul,
 li,
 a {
@@ -115,6 +116,7 @@ a {
 .logo img:hover {
   transform: scale(1.1);
 }
+
 .nav .links ul {
   display: flex;
   justify-content: center;
@@ -193,6 +195,7 @@ a {
   height: 1000px;
   z-index: auto;
 }
+
 .header .container .header-text {
   display: flex;
   justify-content: center;
@@ -347,7 +350,7 @@ a {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-bottom: 50px;
+  padding-top: 93px;
   margin-top: 10px;
   margin-bottom: 75px;
   overflow: hidden;
@@ -360,7 +363,7 @@ a {
   color: var(--main-color);
 }
 
-.about-me .container > img {
+.about-me .container>img {
   position: absolute;
   top: 120px;
   right: 230px;
@@ -369,7 +372,7 @@ a {
 }
 
 @media (max-width: 799px) {
-  .about-me .container > img {
+  .about-me .container>img {
     display: none;
   }
 }
@@ -499,6 +502,7 @@ a {
   width: 100%;
   border-radius: 20px;
 }
+
 .my-work .container .cards .card .front .text {
   flex-direction: column;
   align-items: center;
@@ -644,6 +648,7 @@ a {
   padding: 1rem;
   gap: 20px;
 }
+
 .skills .container .soft-sk .box {
   justify-content: space-evenly;
   align-items: center;
@@ -691,6 +696,7 @@ a {
   border-radius: 25px;
   box-shadow: 0px 2px 20px #5d5b5bad;
 }
+
 .contact .container .con {
   display: flex;
   justify-content: center;
@@ -745,6 +751,7 @@ a {
   right: -155px;
   transform: rotate(-90deg);
 }
+
 @media screen and (max-width: 1200px) {
   .header .container .social {
     transform: rotate(0deg);
@@ -770,4 +777,5 @@ a {
   text-decoration: none;
   transition: 0.2s;
 }
+
 /* ------------------------------- End contact ------------------------------ */
