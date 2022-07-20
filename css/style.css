@@ -365,9 +365,9 @@ a {
 
 .about-me .container>img {
   position: absolute;
-  top: 120px;
+  top: 243px;
   right: 230px;
-  width: 130px;
+  width: 105px;
   transform: rotate(340deg);
 }
 
@@ -387,11 +387,11 @@ a {
 }
 
 .about-me .container .image img {
-  width: 200px;
-  height: 200px;
+  width: 175px;
+  height: 175PX;
   border-radius: 50%;
   position: absolute;
-  top: 20px;
+  top: 145PX;
   left: 492px;
   border: 5px solid var(--main-color);
   transition: all 0.5s;
