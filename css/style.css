@@ -176,7 +176,7 @@ a {
 
 /* ------------------------------ Start header ------------------------------ */
 .header .container {
-  margin-top: 50px;
+  margin-top: 150px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -218,7 +218,7 @@ a {
   height: 692px;
   top: 163px;
   z-index: 1;
-  transform: rotate(133deg);
+  transform: rotate(124deg);
   left: -197px;
 }
 
@@ -247,14 +247,6 @@ a {
   flex-wrap: nowrap;
   font-family: var(--sec-font);
 }
-
-@media (min-width: 400px) {
-  .header .container .header-text .hallo {
-    max-width: 350px;
-  }
-}
-
-
 
 @media (min-width: 400px) {
   .header .container .header-text .hallo p {
@@ -355,6 +347,7 @@ a {
   top: 221px;
   left: -64px;
   width: 108%;
+  z-index: -1;
 }
 
 @media (max-width: 776px) {
