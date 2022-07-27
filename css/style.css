@@ -3,6 +3,11 @@
   --main-color: #ea0f1e;
   --sec-color: #e45826;
   --back-cl: #1d1d1d;
+  --primary-font: 'Francois One',
+    sans-serif;
+  --sec-font: 'Rampart One',
+    cursive;
+
 }
 
 /* ------------------------------ End variable ------------------------------ */
@@ -20,7 +25,8 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Francois One',
+    sans-serif;
   /* background-color: var(--back-cl); */
   padding-left: 1rem;
   padding-right: 1rem;
@@ -170,29 +176,50 @@ a {
 
 /* ------------------------------ Start header ------------------------------ */
 .header .container {
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-evenly;
+  align-items: center;
   position: relative;
-  overflow: hidden;
-  height: 75vh;
   width: 100%;
-  margin-top: 0px;
 }
 
 .header .container .im {
   position: relative;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  left: 17px;
+  bottom: 232px;
+}
+
+@media (max-width: 992px) {
+  .header .container .im {
+    width: 100%;
+    height: 100%;
+    margin-top: 200px;
+  }
+}
+
+
+.header .container .im {
+  position: relative;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  left: 17px;
+  bottom: 232px;
 }
 
 .header .container .im .blob-box {
   position: absolute;
-  width: 600px;
-  height: 400px;
-  top: 171px;
+  width: 792px;
+  height: 692px;
+  top: 163px;
   z-index: 1;
-  transform: rotate(80deg);
-  left: -150px;
+  transform: rotate(133deg);
+  left: -197px;
 }
 
 @media (max-width: 450px) {
@@ -201,17 +228,12 @@ a {
   }
 }
 
-.header .container .im .blob {
-  height: 1000px;
-  z-index: auto;
-}
 
 .header .container .header-text {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 5px;
 }
 
 @media (min-width: 400px) {
@@ -223,6 +245,7 @@ a {
 .header .container .header-text .hallo {
   display: flex;
   flex-wrap: nowrap;
+  font-family: var(--sec-font);
 }
 
 @media (min-width: 400px) {
@@ -231,12 +254,7 @@ a {
   }
 }
 
-.header .container .header-text .hallo p {
-  color: rgb(66, 66, 66);
-  font-size: 10em;
-  padding: 0;
-  margin: 0%;
-}
+
 
 @media (min-width: 400px) {
   .header .container .header-text .hallo p {
@@ -246,7 +264,7 @@ a {
 
 .header .container .hallo p:first-child {
   color: var(--main-color);
-  font-size: 18em;
+  font-size: 25em;
   padding: 0;
   margin: 0px;
   transition: 0.5s;
@@ -266,8 +284,9 @@ a {
 .header .container .hallo p:nth-child(2) {
   color: rgb(39, 39, 39);
   padding: 0;
-  margin-top: 60px;
+  margin-top: 200px;
   transition: all 0.2s;
+  font-size: 110px;
 }
 
 .header .container .hallo p:nth-child(2):hover {
@@ -286,7 +305,9 @@ a {
 
 .header .container .me h1 {
   color: var(--main-color);
-  font-size: 65px;
+  font-family: var(--sec-font);
+  font-size: 100px;
+  font-weight: 700;
   margin: 0px 0px;
   display: inline-block;
 
@@ -296,12 +317,12 @@ a {
 .header .container .me .name-work li {
   color: #fff;
   font-size: 45px;
-  margin: 0px 0px;
-  -o-text-overflow: clip;
+  margin: 15px 0px;
 }
 
 .header .container .me .name-work li span {
   position: relative;
+  margin-bottom: 10px;
 }
 
 .header .container .me .name-work li span::after {
@@ -311,7 +332,7 @@ a {
   height: 105%;
   border-left: 2px solid red;
   left: 0;
-  animation: typing 5s steps(150) infinite;
+  animation: typing 3s steps(150) infinite;
   background-color: var(--back-cl);
 }
 
@@ -319,16 +340,6 @@ a {
   100% {
     left: 100%;
   }
-}
-
-
-
-.header .container .im {
-  position: relative;
-  width: 500px;
-  height: 500px;
-  left: 50px;
-  bottom: 90px;
 }
 
 @media (min-width: 400px) {
@@ -339,29 +350,31 @@ a {
   }
 }
 
-.header .container .im .blob-box .blob {
+.header .container .im .blob-box .bolb {
   position: absolute;
-  top: 10px;
-  left: 100px;
-  width: 100%;
+  top: 221px;
+  left: -64px;
+  width: 108%;
+}
+
+@media (max-width: 776px) {
+  .header .container .im .blob-box .bolb {
+    left: 50px;
+  }
 }
 
 .header .container .im img {
-  max-width: 551px;
+  max-width: 650px;
   margin: 5px auto;
   transition: all 0.5s;
   position: absolute;
-  top: 115px;
-  right: -133px;
+  top: -43px;
+  right: -87px;
   z-index: 1;
   filter: grayscale(100%);
 }
 
-@media (max-width: 375px) {
-  .header .container .im img {
-    margin: 5px auto;
-  }
-}
+
 
 .header .container img:hover {
   transform: scale(1.05);
@@ -369,7 +382,6 @@ a {
 }
 
 .header .container .hallo span {
-  font-size: 8em;
   color: var(--main-color);
 }
 
@@ -379,16 +391,28 @@ a {
 
 .about-me .container {
   display: flex;
-  height: 100vh;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  position: relative;
-  padding-top: 93px;
-  margin-top: 10px;
-  margin-bottom: 75px;
-  overflow: hidden;
+  flex-wrap: wrap;
+  margin-top: 250px;
   transition: all 0.5s ease-in-out;
+}
+
+.about-me .container .heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 250px;
+  transition: all 0.5s ease-in-out;
+}
+
+.about-me .container .about-text {
+  max-width: 1000px;
+  line-height: 1.7;
+  border-radius: 50px;
+  padding: 20px 10px;
+  position: relative;
 }
 
 .about-me h1 {
@@ -397,66 +421,60 @@ a {
   color: var(--main-color);
 }
 
-.about-me .container>img {
+.about-me .container .about-text p {
+  font-size: 25px;
+  color: rgb(211, 210, 210);
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 300px;
+}
+
+
+.about-me .container .about-text .image-1 {
   position: absolute;
-  top: 243px;
-  right: 230px;
+  transform: rotate(12deg);
+  top: 200px;
+  right: 50px;
+}
+
+.about-me .container .about-text .image-1 img {
+  top: 10px;
   width: 105px;
-  transform: rotate(340deg);
+  transform: rotate(12deg);
 }
 
-@media (max-width: 799px) {
-  .about-me .container>img {
-    display: none;
-  }
+.about-me .container .image-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
-.about-me .container .about-text {
-  max-width: 900px;
-  line-height: 1.6;
-  background-color: rgb(255, 218, 219);
-  border-radius: 50px;
-  padding: 20px 10px;
-  border: 5px solid var(--main-color);
-}
 
-.about-me .container .image img {
+
+.about-me .container .image-2 img {
   width: 175px;
   height: 175PX;
   border-radius: 50%;
-  position: absolute;
   top: 145PX;
   left: 492px;
   border: 5px solid var(--main-color);
   transition: all 0.5s;
 }
 
-@media (max-width: 799px) {
-  .about-me .container .image img {
-    display: none;
-  }
-}
-
-.about-me .container .image img:hover {
+.about-me .container .image-2 img:hover {
   transform: scale(1.2) rotate(-10deg);
 }
 
-.about-me .container p {
-  font-size: 20px;
-  color: var(--back-cl);
-  padding-left: 10px;
-  padding-right: 10px;
-  font-weight: 300px;
-}
+
 
 /* -------------------------------- End about ------------------------------- */
 
 /* ----------------------------- Start My works ----------------------------- */
 
-.my-work .container .heading {
-  max-width: 500px;
+.my-work .container {
   text-align: center;
-  margin: 10px auto;
+  margin-top: 250px;
   line-height: 1.5;
   transition: 0.95s cubic-bezier(0, 0, 0.2, 1);
 }
@@ -472,11 +490,11 @@ a {
 .my-work .container .heading p {
   font-size: 1.5em;
   color: rgb(99, 99, 99);
-  width: fit-content;
   letter-spacing: 1.6px;
   margin-top: -21px;
 }
 
+/* 
 .my-work .container .cards {
   flex-wrap: wrap;
   justify-content: center;
@@ -593,18 +611,19 @@ a {
   font-size: 1.8em;
   font-weight: 200;
   color: var(--main-color);
-}
+} */
 
 .my-work .container .web {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   margin-top: 200px;
-  gap: 10px;
   flex-wrap: wrap;
-
+  flex-direction: row-reverse;
+  gap: 75px;
 }
+
+
 
 .my-work .container .web-text {
   margin-left: auto;
